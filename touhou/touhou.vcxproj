@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C26CC80-FDFD-43C4-80B4-749E14D100E2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>touhou</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>SDL\include;SDL\SDL_TTF\include;SDL\SDL_IMAGE\include;FMOD\include;$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>SDL\lib\x86;SDL\SDL_TTF\lib;SDL\SDL_IMAGE\lib;FMOD\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <TargetName>TohoXP</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>SDL\include;SDL\SDL_TTF\include;SDL\SDL_IMAGE\include;FMOD\include;$(IncludePath)</IncludePath>
+    <LibraryPath>SDL\lib\x86;SDL\SDL_TTF\lib;SDL\SDL_IMAGE\lib;FMOD\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>TohoXP</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_ttf.lib;sdl2_image.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_ttf.lib;sdl2_image.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="icon.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BarrageFunctions\BarrageFunctions.h" />
+    <ClInclude Include="BarrageFunctions\Barrage_Stage1Boss.h" />
+    <ClInclude Include="BarrageFunctions\Barrage_Stage1Field.h" />
+    <ClInclude Include="BarrageFunctions\Barrage_Stage2Boss.h" />
+    <ClInclude Include="BarrageFunctions\Barrage_Stage2Field.h" />
+    <ClInclude Include="BomberFunctions\Bomber_Marisa.h" />
+    <ClInclude Include="BomberFunctions\Bomber_Reimu.h" />
+    <ClInclude Include="BomberFunctions\Bomber_Reisen.h" />
+    <ClInclude Include="EventScene\EventScene.h" />
+    <ClInclude Include="ExternalUtil\CSVManager\CSVManager.h" />
+    <ClInclude Include="ExternalUtil\INIManager\INIManager.h" />
+    <ClInclude Include="ExternalUtil\StringTokenizer\stringTokenizer.h" />
+    <ClInclude Include="ExternalUtil\VirtualKeyConverter\VirtualKeyConverter.h" />
+    <ClInclude Include="GameCore\Angle360.h" />
+    <ClInclude Include="GameCore\CommonUtil.h" />
+    <ClInclude Include="GameCore\Declarations.h" />
+    <ClInclude Include="GameCore\GameMain.h" />
+    <ClInclude Include="GameCore\GamePlay.h" />
+    <ClInclude Include="GameEngine\GameBarrage.h" />
+    <ClInclude Include="GameEngine\GameBoss.h" />
+    <ClInclude Include="GameEngine\GameBullet.h" />
+    <ClInclude Include="GameEngine\GameEnemy.h" />
+    <ClInclude Include="GameEngine\GameEnemyBullet.h" />
+    <ClInclude Include="GameEngine\GameExplosion.h" />
+    <ClInclude Include="GameEngine\GameItem.h" />
+    <ClInclude Include="GameEngine\GameObject.h" />
+    <ClInclude Include="GameEngine\GamePlayer.h" />
+    <ClInclude Include="GameEngine\GamePlayerHeatBox.h" />
+    <ClInclude Include="GameEngine\GamePlayerShot.h" />
+    <ClInclude Include="GameEngine\GameStage.h" />
+    <ClInclude Include="GameEngine\HomingTargetList.h" />
+    <ClInclude Include="GameStage\Game_Stage1.h" />
+    <ClInclude Include="GameStage\Game_Stage2.h" />
+    <ClInclude Include="GameState\GameState_CharaSelect.h" />
+    <ClInclude Include="GameState\GameState_Credits.h" />
+    <ClInclude Include="GameState\GameState_Game.h" />
+    <ClInclude Include="GameState\GameState_GameOver_Score.h" />
+    <ClInclude Include="GameState\GameState_GameUtil.h" />
+    <ClInclude Include="GameState\GameState_Intro.h" />
+    <ClInclude Include="GameState\GameState_MainMenu.h" />
+    <ClInclude Include="GameState\GameState_Result.h" />
+    <ClInclude Include="GameState\GameState_ScoreBoard.h" />
+    <ClInclude Include="GameState\Sample.h" />
+    <ClInclude Include="MemoryLeakChecker.h" />
+    <ClInclude Include="PlayerShotFunctions\PlayerShot_Marisa.h" />
+    <ClInclude Include="PlayerShotFunctions\PlayerShot_Reimu.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SDLEngine\FilePacker\FilePacker.h" />
+    <ClInclude Include="SDLEngine\ShooterFont.h" />
+    <ClInclude Include="SDLEngine\ShooterInput.h" />
+    <ClInclude Include="SDLEngine\ShooterObject.h" />
+    <ClInclude Include="SDLEngine\ShooterRect.h" />
+    <ClInclude Include="SDLEngine\ShooterScreen.h" />
+    <ClInclude Include="SDLEngine\ShooterSound.h" />
+    <ClInclude Include="SDLEngine\ShooterSoundManager.h" />
+    <ClInclude Include="SDLEngine\ShooterSprite.h" />
+    <ClInclude Include="SDLEngine\ShooterSurface.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BarrageFunctions\BarrageFunctions.cpp" />
+    <ClCompile Include="BarrageFunctions\Barrage_Stage1Boss.cpp" />
+    <ClCompile Include="BarrageFunctions\Barrage_Stage1Field.cpp" />
+    <ClCompile Include="BarrageFunctions\Barrage_Stage2Boss.cpp" />
+    <ClCompile Include="BarrageFunctions\Barrage_Stage2Field.cpp" />
+    <ClCompile Include="BomberFunctions\Bomber_Marisa.cpp" />
+    <ClCompile Include="BomberFunctions\Bomber_Reimu.cpp" />
+    <ClCompile Include="BomberFunctions\Bomber_Reisen.cpp" />
+    <ClCompile Include="EventScene\EventScene.cpp" />
+    <ClCompile Include="ExternalUtil\CSVManager\CSVManager.cpp" />
+    <ClCompile Include="ExternalUtil\INIManager\INIManager.cpp" />
+    <ClCompile Include="ExternalUtil\StringTokenizer\stringTokenizer.cpp" />
+    <ClCompile Include="ExternalUtil\VirtualKeyConverter\VirtualKeyConverter.cpp" />
+    <ClCompile Include="GameCore\Angle360.cpp" />
+    <ClCompile Include="GameCore\CommonUtil.cpp" />
+    <ClCompile Include="GameCore\Declarations.cpp" />
+    <ClCompile Include="GameCore\GameMain.cpp" />
+    <ClCompile Include="GameCore\GamePlay.cpp" />
+    <ClCompile Include="GameEngine\GameBarrage.cpp" />
+    <ClCompile Include="GameEngine\GameBoss.cpp" />
+    <ClCompile Include="GameEngine\GameBullet.cpp" />
+    <ClCompile Include="GameEngine\GameEnemy.cpp" />
+    <ClCompile Include="GameEngine\GameEnemyBullet.cpp" />
+    <ClCompile Include="GameEngine\GameExplosion.cpp" />
+    <ClCompile Include="GameEngine\GameItem.cpp" />
+    <ClCompile Include="GameEngine\GameObject.cpp" />
+    <ClCompile Include="GameEngine\GamePlayer.cpp" />
+    <ClCompile Include="GameEngine\GamePlayerHeatBox.cpp" />
+    <ClCompile Include="GameEngine\GamePlayerShot.cpp" />
+    <ClCompile Include="GameEngine\GameStage.cpp" />
+    <ClCompile Include="GameEngine\HomingTargetList.cpp" />
+    <ClCompile Include="GameStage\Game_Stage1.cpp" />
+    <ClCompile Include="GameStage\Game_Stage2.cpp" />
+    <ClCompile Include="GameState\GameState_CharaSelect.cpp" />
+    <ClCompile Include="GameState\GameState_Credits.cpp" />
+    <ClCompile Include="GameState\GameState_Game.cpp" />
+    <ClCompile Include="GameState\GameState_GameOver_Score.cpp" />
+    <ClCompile Include="GameState\GameState_GameUtil.cpp" />
+    <ClCompile Include="GameState\GameState_Intro.cpp" />
+    <ClCompile Include="GameState\GameState_MainMenu.cpp" />
+    <ClCompile Include="GameState\GameState_Result.cpp" />
+    <ClCompile Include="GameState\GameState_ScoreBoard.cpp" />
+    <ClCompile Include="GameState\Sample.cpp" />
+    <ClCompile Include="PlayerShotFunctions\PlayerShot_Marisa.cpp" />
+    <ClCompile Include="PlayerShotFunctions\PlayerShot_Reimu.cpp" />
+    <ClCompile Include="SDLEngine\FilePacker\FilePacker.cpp" />
+    <ClCompile Include="SDLEngine\ShooterFont.cpp" />
+    <ClCompile Include="SDLEngine\ShooterInput.cpp" />
+    <ClCompile Include="SDLEngine\ShooterObject.cpp" />
+    <ClCompile Include="SDLEngine\ShooterRect.cpp" />
+    <ClCompile Include="SDLEngine\ShooterScreen.cpp" />
+    <ClCompile Include="SDLEngine\ShooterSound.cpp" />
+    <ClCompile Include="SDLEngine\ShooterSoundManager.cpp" />
+    <ClCompile Include="SDLEngine\ShooterSprite.cpp" />
+    <ClCompile Include="SDLEngine\ShooterSurface.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="touhou.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="touhou.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

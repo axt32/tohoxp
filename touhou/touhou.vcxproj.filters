@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{693d1555-173d-4ab1-ac3e-79697ded974f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameCore">
+      <UniqueIdentifier>{a2421dd8-e989-4bfd-ad5e-796fe8acae0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{5c2f9f69-1a24-4334-b8d4-16c882a90c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDLEngine">
+      <UniqueIdentifier>{481ab5e3-90e6-46c0-a504-f30f8a1bcae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameState">
+      <UniqueIdentifier>{ad25f0ce-8716-498d-97aa-eeb4049623ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BarrageFunctions">
+      <UniqueIdentifier>{d788e397-993c-4386-bcb8-2102962ac51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EventScene">
+      <UniqueIdentifier>{31584ec3-d60c-4b11-abb3-6a2d3c5aee1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BomberFunctions">
+      <UniqueIdentifier>{8533176c-1aa9-40f7-85a7-cbd9fb66670c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalUtil">
+      <UniqueIdentifier>{fb5ab4cc-1466-40da-94b8-fec51f252c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalUtil\CSVManager">
+      <UniqueIdentifier>{2577d0e4-36fd-46b8-8da7-0e3c2f1cf7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalUtil\StringTokenizer">
+      <UniqueIdentifier>{7e494308-b989-4d30-b0a5-997d37bb202d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalUtil\INIManager">
+      <UniqueIdentifier>{b3fb43f8-fb70-4bf1-92c9-34414603c61a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalUtil\VirtualKeyConverter">
+      <UniqueIdentifier>{3cb0ef87-539e-47b2-a5d6-26b454f52bad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameStage">
+      <UniqueIdentifier>{0e00d1b1-0184-45d9-8ddd-83acf8a1edd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlayerShotFunctions">
+      <UniqueIdentifier>{e610ddeb-36c5-4222-9962-07642f910c88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDLEngine\FilePacker">
+      <UniqueIdentifier>{1557c851-5e61-477a-bca5-30c199e27678}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterSurface.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterObject.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterSprite.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCore\GameMain.h">
+      <Filter>GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameObject.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GamePlayer.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterScreen.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterRect.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCore\Declarations.h">
+      <Filter>GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCore\GamePlay.h">
+      <Filter>GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterInput.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_Game.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameEnemyBullet.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\Sample.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_GameUtil.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameEnemy.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameBullet.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryLeakChecker.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameBarrage.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GamePlayerShot.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameStage.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameExplosion.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCore\CommonUtil.h">
+      <Filter>GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GamePlayerHeatBox.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageFunctions\BarrageFunctions.h">
+      <Filter>BarrageFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCore\Angle360.h">
+      <Filter>GameCore</Filter>
+    </ClInclude>
+    <ClInclude Include="EventScene\EventScene.h">
+      <Filter>EventScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterFont.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameBoss.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_Intro.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_MainMenu.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_CharaSelect.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterSound.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\ShooterSoundManager.h">
+      <Filter>SDLEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageFunctions\Barrage_Stage1Boss.h">
+      <Filter>BarrageFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_Result.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageFunctions\Barrage_Stage1Field.h">
+      <Filter>BarrageFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="BomberFunctions\Bomber_Reisen.h">
+      <Filter>BomberFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageFunctions\Barrage_Stage2Boss.h">
+      <Filter>BarrageFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_GameOver_Score.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalUtil\CSVManager\CSVManager.h">
+      <Filter>ExternalUtil\CSVManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_ScoreBoard.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalUtil\StringTokenizer\stringTokenizer.h">
+      <Filter>ExternalUtil\StringTokenizer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\GameItem.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalUtil\INIManager\INIManager.h">
+      <Filter>ExternalUtil\INIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalUtil\VirtualKeyConverter\VirtualKeyConverter.h">
+      <Filter>ExternalUtil\VirtualKeyConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStage\Game_Stage1.h">
+      <Filter>GameStage</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStage\Game_Stage2.h">
+      <Filter>GameStage</Filter>
+    </ClInclude>
+    <ClInclude Include="BomberFunctions\Bomber_Reimu.h">
+      <Filter>BomberFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerShotFunctions\PlayerShot_Reimu.h">
+      <Filter>PlayerShotFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState_Credits.h">
+      <Filter>GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageFunctions\Barrage_Stage2Field.h">
+      <Filter>BarrageFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\HomingTargetList.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="BomberFunctions\Bomber_Marisa.h">
+      <Filter>BomberFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerShotFunctions\PlayerShot_Marisa.h">
+      <Filter>PlayerShotFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLEngine\FilePacker\FilePacker.h">
+      <Filter>SDLEngine\FilePacker</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="touhou.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterSurface.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterObject.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterSprite.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCore\GameMain.cpp">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameObject.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GamePlayer.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterScreen.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterRect.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCore\Declarations.cpp">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCore\GamePlay.cpp">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterInput.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_Game.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameEnemyBullet.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\Sample.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_GameUtil.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameEnemy.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameBullet.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameBarrage.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GamePlayerShot.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameStage.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameExplosion.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCore\CommonUtil.cpp">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GamePlayerHeatBox.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageFunctions\BarrageFunctions.cpp">
+      <Filter>BarrageFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCore\Angle360.cpp">
+      <Filter>GameCore</Filter>
+    </ClCompile>
+    <ClCompile Include="EventScene\EventScene.cpp">
+      <Filter>EventScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterFont.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameBoss.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_Intro.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_MainMenu.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_CharaSelect.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterSound.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\ShooterSoundManager.cpp">
+      <Filter>SDLEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageFunctions\Barrage_Stage1Boss.cpp">
+      <Filter>BarrageFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_Result.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageFunctions\Barrage_Stage1Field.cpp">
+      <Filter>BarrageFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="BomberFunctions\Bomber_Reisen.cpp">
+      <Filter>BomberFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageFunctions\Barrage_Stage2Field.cpp">
+      <Filter>BarrageFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageFunctions\Barrage_Stage2Boss.cpp">
+      <Filter>BarrageFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_GameOver_Score.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalUtil\CSVManager\CSVManager.cpp">
+      <Filter>ExternalUtil\CSVManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_ScoreBoard.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalUtil\StringTokenizer\stringTokenizer.cpp">
+      <Filter>ExternalUtil\StringTokenizer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\GameItem.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalUtil\INIManager\INIManager.cpp">
+      <Filter>ExternalUtil\INIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalUtil\VirtualKeyConverter\VirtualKeyConverter.cpp">
+      <Filter>ExternalUtil\VirtualKeyConverter</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStage\Game_Stage1.cpp">
+      <Filter>GameStage</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStage\Game_Stage2.cpp">
+      <Filter>GameStage</Filter>
+    </ClCompile>
+    <ClCompile Include="BomberFunctions\Bomber_Reimu.cpp">
+      <Filter>BomberFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerShotFunctions\PlayerShot_Reimu.cpp">
+      <Filter>PlayerShotFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\GameState_Credits.cpp">
+      <Filter>GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\HomingTargetList.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="BomberFunctions\Bomber_Marisa.cpp">
+      <Filter>BomberFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerShotFunctions\PlayerShot_Marisa.cpp">
+      <Filter>PlayerShotFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLEngine\FilePacker\FilePacker.cpp">
+      <Filter>SDLEngine\FilePacker</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="touhou.rc" />
+  </ItemGroup>
+</Project>
